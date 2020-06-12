@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>jQuery VenoBox Example</title>
+
+    <link rel="stylesheet" href="css/venobox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/demo.css" />
+	
+  <style> 
+  .thumb{
+    text-align:center;
+   }
+	.img-thumb {
+	  display: inline-block;
+	 }
+	.thumbs img{
+	 width: 120px;
+	 height: auto;
+	 }
+  </style>
+ 
+    </head>
+    <body>
+	 <header class="intro">
+ <h1> jQuery VenoBox Example</h1>
+ <p> A breif introduction to plugin.</p>
+ <p> Written in HTML, CSS, JavaScript (jQuery)... </p>
+ <div class="action">
+ <a href="https://www.codehim.com/lightbox/jquery-lightbox-for-text-iframe-images-videos-venobox/" title="Back to download and tutorial page" class="btn back">Back to Tutorial</a>
+ <a href="https://github.com/nicolafranchini/VenoBox" title="View, Fork or Star on GitHub" class="btn github">View on GitHub</a>
+ </div>
+ 
+ </header>
+	
+<main>
+<article>
+        <div class="container">
+            <div class="section">
+                <div class="block">
+                 
+                    <h2>VenoBox Example</h2>
+					<p>The following are examples of jQuery VenoBox lightbox plugin.</p>
+                    <p>
+                        <span>Touch Swipe and Arrow Keys navigation enabled</span>
+ <i class="fa fa-angle-left fa-fw"></i>
+                        <i class="fa fa-hand-o-up fa-fw"></i>
+ <i class="fa fa-angle-right fa-fw"></i>
+                        <a title="show html" class="pull-right label label-info codelabel" data-toggle="collapse" href="#code-img" aria-expanded="false" aria-controls="collapseExample">
+                          <i class="fa fa-code"></i>
+                        </a>
+                    </p>
+                    <div class="collapse clear" id="code-img">
+<pre class="prettyprint">
+&lt;a class="venobox" data-gall="gallery01" href="image01-big.jpg"&gt;&lt;img src="image01-small.jpg"&gt;&lt;/a&gt;
+&lt;a class="venobox" data-gall="gallery01" href="image02-big.jpg"&gt;&lt;img src="image02-small.jpg"&gt;&lt;/a&gt;
+</pre>
+                    </div>
+                </div>
+				.
+                <div class="thumbs ">
+                    <div class="img-thumb">
+                        <a id="firstlink" class="venobox" data-gall="gall1" data-title="Breakfast Recipe - Basik" href="img/pic1.jpg">
+                            <img src="img/pic1.jpg">
+                        </a>
+                    </div>
+                    <div class="img-thumb">
+                        <a class="venobox" data-gall="gall1" data-title="Twhater - Basik" href="img/pic2.jpg"><img src="img/pic2.jpg"></a>
+                    </div>
+                    <div class="img-thumb">
+                        <a class="venobox" data-gall="gall1" data-title="Z series - TomoZ" href="img/pic3.jpg"><img src="img/pic3.jpg"></a>
+                    </div>
+                    <div class="img-thumb">
+                        <a class="venobox" data-gall="gall1" data-title="Under Fest - TomoZ" href="img/pic5.jpg"><img src="img/pic5.jpg"></a>
+                    </div>
+                    <div class="img-thumb">
+                        <a class="venobox" data-gall="gall1" data-title="Zona MC - Burla2222" href="img/pic4.jpg"><img src="img/pic4.jpg"></a>
+                    </div>
+
+                </div>
+
+                <div class="row margin-bottom-20">
+                    <div class="col-sm-12">
+                        <div class="block">
+                            <h2 class="pull-left">Video</h2>
+                            <a title="show html" class="pull-right codelabel label label-info" data-toggle="collapse" href="#code-vid" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fa fa-code"></i>
+                            </a>
+                        </div>
+                        <div class="collapse clear" id="code-vid">
+<pre class="prettyprint">
+&lt;a class="venobox" data-autoplay="true" data-vbtype="video" href="http://vimeo.com/video"&gt;Vimeo&lt;/a&gt;
+&lt;a class="venobox" data-autoplay="true" data-vbtype="video" href="http://youtu.be/video"&gt;Youtube&lt;/a&gt;
+</pre>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="block">
+                            <a class="btn btn-info venoboxvid btn-lg" data-gall="gall-video" data-autoplay="true" data-vbtype="video" href="http://vimeo.com/75976293">
+                                <i class="fa fa-vimeo"></i> Vimeo
+                            </a>
+                            
+                            <a class="btn btn-danger venoboxvid btn-lg" data-gall="gall-video" data-autoplay="true" data-vbtype="video" href="https://youtu.be/bS5P_LAqiVg">
+                                <i class="fa fa-youtube"></i> YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-bottom-20">
+                    <div class="col-sm-12">
+                        <div class="block">
+                            <h2 class="pull-left">Custom links</h2>
+                            <a title="show html" class="pull-right codelabel label label-info" data-toggle="collapse" href="#code-links" aria-expanded="false" aria-controls="collapseExample">
+                                <i class="fa fa-code"></i>
+                            </a>
+                        </div>
+                        <div class="collapse clear" id="code-links">
+<pre class="prettyprint">
+&lt;a class="venobox" data-vbtype="iframe" href="https://www.google.com/maps/embed?mapid"&gt;Gmaps&lt;/a&gt;
+&lt;a class="venobox" data-vbtype="iframe" href="http://example.com/"&gt;iFrame&lt;/a&gt;   
+&lt;a class="venobox" data-vbtype="ajax" href="ajax.php"&gt;Ajax&lt;/a&gt;
+&lt;a class="venobox" data-vbtype="inline" href="#inline-content"&gt;Inline&lt;/a&gt;
+
+&lt;div id="inline-content" style="display:none;"&gt;
+    &lt;h1&gt;Hello world!&lt;/h1&gt;
+&lt;/div&gt;
+</pre>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="block">
+                            <a data-gall="iframe" title="Google Maps example with custom title and navigation" class="btn btn-default venoboxframe btn-lg" data-vbtype="iframe" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.85004765174!2d-74.25887720257019!3d40.70582992708322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York!5e0!3m2!1sit!2sus!4v1488175057980">
+                            <i class="fa fa-map-marker"></i> Gmaps</a>
+                            <a data-gall="iframe" class="btn btn-default venoboxframe btn-lg" data-vbtype="iframe" title="iFrame example" href="http://example.com/">iFrame</a>   
+                            <a class="btn btn-default btn-lg venoboxajax" data-gall="gall-frame" data-vbtype="ajax" href="ajax.php">Ajax</a>
+                            <a class="btn btn-default btn-lg venoboxinline" data-gall="gall1" data-title="inline content" data-vbtype="inline" href="#inline-content">Inline</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="inline-content" style="display:none;">
+                    <div style="background:#fff; width:100%; height:100%; float:left; padding:10px;">
+                        <h1>Hello world!</h1>
+                        <p>this is my inline content, with custom options: </p>
+                        <p>
+                            <ul>
+                                <li><code>framewidth</code> : <code>'400px'</code> </li>
+                                <li><code>frameheight</code> : <code>'auto'</code></li>
+                                <li><code>border</code> : <code>'10px'</code></li>
+                                <li><code>bgcolor</code> : <code>'#f46f00'</code></li>
+                            </ul>
+                        </p>
+                        <a href="#" class="closeme">close</a>
+                        <h1 class="pull-left"><i class="fa fa-cog fa-spin"></i></h1>
+                        <div class="trans vbox-close">some css3 transitions</div>
+                    </div>
+                </div>
+            </div>
+ </article>
+		</main>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/venobox.js"></script>
+		<script>
+    $(document).on('click', '.calldownload', function(e) {
+        setupButton();
+    });
+
+    function setupButton(){
+        $('.downlink').addClass('disabled');
+        $('.wrapannoy').html(button);
+        selected = 0;
+        $('.annoyed').html(steps[selected]);
+    }
+
+    function activateD(action){
+        $.ajax({
+            url: 'stat/count.php',
+            cache: false,
+            method: "POST",
+            data: { whatcount : action },
+
+        }).done(function( msg ) {
+            // console.log(msg);
+        });
+        $('.downlink').removeClass('disabled');
+    }
+
+    $(document).on('click', '.annoyed', function(e) {
+        selected++;
+        if (selected < steps.length) {
+            $(this).html(steps[selected]);
+        } else {
+            activateD('meh');
+            $(this).parent().html('Meh <i class="fa fa-meh-o"></i>');
+        }
+    });
+
+    $('.venoboxvid').venobox({
+        bgcolor: '#000',
+        spinner : 'cube-grid',
+        // cb_post_open : function(obj, gallIndex, thenext, theprev){
+        //     console.log(thenext);
+        // },
+    });
+    $('.venoboxframe').venobox({
+        border: '6px',
+        overlayColor : 'rgba(255,255,255,0.85)',
+        titlePosition : 'bottom',
+        titleColor: '#333',
+        titleBackground: 'transparent',
+        closeColor: '#333',
+        closeBackground: 'transparent',
+                spinner : 'wave'
+    });
+    // $('.venoboxinline').venobox({
+    //     framewidth: '400px',
+    //     frameheight: 'auto',
+    //     border: '10px',
+    //     bgcolor: '#f46f00',
+    //     titleattr: 'data-title'
+    // });
+    $('.venoboxajax').venobox({
+        border: '30px;',
+        // frameheight: '220px'
+    });
+    var venoOptions = {
+        numeratio: true,
+        infinigall: true,
+        border : '20px',
+        titleattr: 'data-title',
+        // cb_after_nav : function(obj, gallIndex, thenext, theprev){
+        //     console.log('item index '+ gallIndex);
+        //     console.log(thenext);
+
+        // },
+        // cb_post_open : function(obj, gallIndex, thenext, theprev){
+        //     console.log('item index '+ gallIndex);
+        // },
+    }
+    $('.venobox').venobox(venoOptions);
+
+// init plugin.
+var test = $('.venoboxinline').venobox({
+    numeratio: true,
+        framewidth: '400px',
+        frameheight: 'auto',
+        border: '10px',
+        bgcolor: '#f46f00',
+        titleattr: 'data-title',
+        infinigall: true,
+        // cb_init : function(plugin){
+        //     console.log('INIT');
+        //     console.log(plugin);
+        // },
+        // cb_pre_open : function(obj){
+        //     console.log('link obj');
+        //     console.log(obj.data());
+        // },
+        // cb_post_open : function(obj, gallIndex, thenext, theprev){
+        //     console.log('item index');
+        //     console.log(gallIndex);
+        //     console.log('next - prev lenght');
+        //     console.log(thenext.length);
+        //     console.log(theprev.length);
+        // },
+        // cb_pre_close : function(obj, gallIndex, thenext, theprev){
+        //     console.log('item index');
+        //     console.log(gallIndex);
+        // },
+        // cb_post_close : function(){
+        //     console.log('CLOSED');
+        // },
+        // cb_after_nav : function(obj, gallIndex, thenext, theprev){
+        //     console.log('after nav');
+        //     console.log(gallIndex);
+        // }
+
+})
+//test.venobox('foo_public_method');
+// call a method from within the plugin outside of the plugin.
+$(document).on('click', '.closeme', function(e){
+    e.preventDefault();
+    // console.log('called');
+    // test.VBprev();
+    // test.VBnext();
+    test.VBclose();
+
+});
+		</script>
+
+		 <footer class="credit">Author: Nicola Franchini - Distributed By: <a title="Awesome web design code & scripts" href="https://www.codehim.com?source=demo-page" target="_blank">CodeHim</a></footer>
+ <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"> </script> 
+		
+    </body>
+</html>
